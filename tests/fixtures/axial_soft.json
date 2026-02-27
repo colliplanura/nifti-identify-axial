@@ -1,0 +1,10 @@
+{
+    "SeriesDescription": "BODY SOFT AXIAL",
+    "ProtocolName": "Abdomen Routine",
+    "ConvolutionKernel": "B30f",
+    "ImageType": ["ORIGINAL", "PRIMARY", "AXIAL"],
+    "SliceThickness": 2.0,
+    "WindowCenter": 40,
+    "WindowWidth": 400,
+    "ImageOrientationPatientDICOM": [1.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+}

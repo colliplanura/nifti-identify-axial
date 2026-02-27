@@ -1,0 +1,10 @@
+{
+    "SeriesDescription": "MIP 10mm",
+    "ProtocolName": "MIP Reformat",
+    "ConvolutionKernel": "B30f",
+    "ImageType": ["DERIVED", "SECONDARY", "MIP"],
+    "SliceThickness": 10.0,
+    "WindowCenter": 40,
+    "WindowWidth": 400,
+    "ImageOrientationPatientDICOM": [1.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+}

@@ -1,0 +1,10 @@
+{
+    "SeriesDescription": "LUNG",
+    "ProtocolName": "Lung Window",
+    "ConvolutionKernel": "B60f",
+    "ImageType": ["ORIGINAL", "PRIMARY", "AXIAL"],
+    "SliceThickness": 1.25,
+    "WindowCenter": -600,
+    "WindowWidth": 1500,
+    "ImageOrientationPatientDICOM": [1.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+}

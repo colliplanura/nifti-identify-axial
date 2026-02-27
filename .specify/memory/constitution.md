@@ -1,50 +1,107 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+SYNC IMPACT REPORT
+==================
+Version: 1.0.0 → 1.1.0 (MINOR - Adição de princípio)
 
-## Core Principles
+Princípios Modificados:
+- Adicionado V. Sincronização de Artefatos SDD
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+Templates Verificados:
+✅ plan-template.md - Compatível
+✅ spec-template.md - Compatível
+✅ tasks-template.md - Compatível
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+TODOs Pendentes: Nenhum
+-->
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+# Constituição do Projeto NIfTI Identify Axial
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+## Princípios Fundamentais
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### I. Simplicidade
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+O código DEVE ser simples, pequeno e direto ao ponto. Aplicar rigorosamente o princípio YAGNI (You Aren't Gonna Need It): não implementar funcionalidades "por precaução" ou "para o futuro".
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+- Cada função DEVE ter uma responsabilidade clara e única
+- Evitar abstrações prematuras e camadas desnecessárias
+- Preferir soluções explícitas sobre implícitas
+- Complexidade adicional DEVE ser justificada com caso de uso concreto
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+**Racional**: Código simples é mais fácil de manter, testar e entender. Over-engineering aumenta tempo de desenvolvimento e dificulta manutenção.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### II. Reutilização de Código
 
-## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+Antes de implementar nova funcionalidade, DEVE-SE verificar se já existe código reutilizável no projeto ou em bibliotecas padrão.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+- Funções utilitárias DEVEM ser extraídas quando há padrão repetido
+- Preferir bibliotecas padrão do Python sobre dependências externas
+- Duplicação de código DEVE ser eliminada mediante refatoração
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Racional**: Reutilização reduz bugs, melhora consistência e diminui a superfície de manutenção.
+
+### III. Testes Equilibrados
+
+Testes DEVEM validar funcionalidades críticas sem excessos. Focar em cenários de uso real e casos de borda relevantes.
+
+- Testes unitários para funções de lógica de negócio (pontuação, classificação)
+- Testes de integração apenas quando necessário para validar fluxo completo
+- Evitar testes redundantes ou que testam implementação ao invés de comportamento
+- Cobertura deve ser pragmática, não um objetivo em si
+
+**Racional**: Testes demais são tão problemáticos quanto testes de menos - tornam refatorações custosas e podem dar falsa sensação de segurança.
+
+### IV. Documentação Essencial
+
+Documentação DEVE seguir o conjunto mínimo de artefatos previstos na metodologia SDD (Specification-Driven Development).
+
+- README.md com propósito, instalação e uso básico
+- Docstrings apenas em funções públicas ou complexas
+- Comentários inline apenas para lógica não-óbvia
+- Especificações e planos somente quando feature justificar
+
+**Racional**: Documentação excessiva desatualiza rapidamente e compete com código como fonte de verdade.
+
+### V. Sincronização de Artefatos SDD
+
+Os artefatos da metodologia SDD DEVEM ser mantidos sempre atualizados. A cada novo prompt ou alteração no projeto:
+
+- `spec.md` DEVE refletir requisitos e cenários de usuário atuais
+- `plan.md` DEVE ser atualizado com mudanças de contexto técnico ou estrutura
+- `tasks.md` DEVE refletir o estado atual das tarefas (concluídas, pendentes, novas)
+
+Atualizações DEVEM ser incrementais e focadas apenas nas seções afetadas pela mudança. Não reescrever documentos inteiros desnecessariamente.
+
+**Racional**: Artefatos desatualizados levam a decisões incorretas e retrabalho. Manter sincronia entre código e documentação é essencial para a metodologia SDD.
+
+## Stack Técnica
+
+- **Linguagem**: Python 3.8+
+- **Tipo de Projeto**: CLI (Command Line Interface)
+- **Dependências**: Mínimas (bibliotecas padrão sempre que possível)
+- **Entrada/Saída**: Arquivos JSON (dcm2niix) → Texto formatado no terminal
+- **Plataforma Alvo**: Linux, macOS, Windows
+
+## Fluxo de Trabalho
+
+1. **Entender** o problema antes de implementar
+2. **Verificar** código existente para reutilização
+3. **Implementar** solução mínima viável
+4. **Testar** cenários relevantes
+5. **Documentar** apenas o necessário
+
+Alterações DEVEM ser incrementais e verificáveis. Commits devem ser atômicos e com mensagens descritivas em português.
+
+## Governança
+
+Esta constituição tem precedência sobre outras práticas do projeto. Emendas requerem:
+
+1. Justificativa documentada para a mudança
+2. Incremento de versão seguindo versionamento semântico:
+   - MAJOR: Remoção ou redefinição de princípio
+   - MINOR: Adição de princípio ou seção
+   - PATCH: Clarificações e correções textuais
+3. Atualização da data de emenda
+
+Toda contribuição DEVE verificar conformidade com os princípios acima. Desvios DEVEM ser explicitamente justificados.
+
+**Versão**: 1.1.0 | **Ratificado**: 2026-02-26 | **Última Emenda**: 2026-02-26

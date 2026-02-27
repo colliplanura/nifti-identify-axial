@@ -1,0 +1,10 @@
+{
+    "SeriesDescription": "BONE",
+    "ProtocolName": "Bone Window",
+    "ConvolutionKernel": "B70f",
+    "ImageType": ["ORIGINAL", "PRIMARY", "AXIAL"],
+    "SliceThickness": 1.0,
+    "WindowCenter": 400,
+    "WindowWidth": 2000,
+    "ImageOrientationPatientDICOM": [1.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+}

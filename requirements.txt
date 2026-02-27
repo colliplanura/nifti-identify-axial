@@ -1,0 +1,4 @@
+# NIfTI Filter - Dependências
+# Mínimo necessário conforme constituição (Princípio I: Simplicidade)
+
+nibabel>=4.0.0

@@ -1,0 +1,10 @@
+{
+    "SeriesDescription": "CORONAL MPR",
+    "ProtocolName": "Reformat",
+    "ConvolutionKernel": "B30f",
+    "ImageType": ["DERIVED", "SECONDARY", "MPR"],
+    "SliceThickness": 3.0,
+    "WindowCenter": 40,
+    "WindowWidth": 400,
+    "ImageOrientationPatientDICOM": [1.0, 0.0, 0.0, 0.0, 0.0, -1.0]
+}
