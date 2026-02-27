@@ -103,9 +103,14 @@ Arquivos não relevantes são movidos para `descarte/` no mesmo diretório do ar
 
 ## Autor
 
-**Sandro Colli Planura**
+**Sandro Colli** (Citação: Colli, Sandro)
 
 Este projeto está sendo desenvolvido no âmbito do **Doutorado em Ciências Médicas** pelo **Instituto D'Or de Pesquisa e Ensino (IDOR)**.
+
+**Orientação**:
+- Dr. Alysson Roncally Silva Carvalho
+- Dr. Rodrigo Basilio
+- Dra. Rosana Souza Rodrigues
 
 [![IDOR](https://img.shields.io/badge/IDOR-Instituto%20D'Or-blue)](https://www.idor.org/)
 

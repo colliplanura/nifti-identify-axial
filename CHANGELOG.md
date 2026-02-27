@@ -39,9 +39,12 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 Este projeto está sendo desenvolvido no âmbito do **Doutorado em Ciências Médicas** 
 pelo **Instituto D'Or de Pesquisa e Ensino (IDOR)**.
 
-**Autor**: Sandro Colli Planura
+**Autor**: Sandro Colli (Citação: Colli, Sandro)
 
-**Orientação Acadêmica**: Instituto D'Or de Pesquisa e Ensino (IDOR)
+**Orientação**:
+- Dr. Alysson Roncally Silva Carvalho
+- Dr. Rodrigo Basilio
+- Dra. Rosana Souza Rodrigues
 
 **Repositório**: https://github.com/colliplanura/nifti-identify-axial
 

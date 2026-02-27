@@ -5,13 +5,15 @@ CLI para filtrar séries NIfTI axiais de partes moles com cortes finos,
 movendo séries não relevantes para diretório de descarte.
 
 Desenvolvido no âmbito do Doutorado em Ciências Médicas pelo
-Instituto D'Or de Pesquisa e Ensino (IDOR).
+Instituto D'Or de Pesquisa e Ensino (IDOR), sob orientação dos Doutores
+Alysson Roncally Silva Carvalho, Rodrigo Basilio e Rosana Souza Rodrigues.
 """
 
 __version__ = "0.1.0"
-__author__ = "Sandro Colli Planura"
+__author__ = "Sandro Colli"
 __email__ = "colliplanura@gmail.com"
 __institution__ = "Instituto D'Or de Pesquisa e Ensino (IDOR)"
+__citation__ = "Colli, Sandro"
 
 from .classifier import AvaliacaoSerie, classificar_serie, is_axial_por_orientacao
 from .file_ops import carregar_json, descobrir_series, mover_para_descarte

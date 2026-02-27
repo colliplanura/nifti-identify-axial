@@ -10,10 +10,10 @@ readme = "README.md"
 license = "MIT"
 requires-python = ">=3.8"
 authors = [
-    { name = "Sandro Colli Planura", email = "colliplanura@gmail.com" }
+    { name = "Sandro Colli", email = "colliplanura@gmail.com" }
 ]
 maintainers = [
-    { name = "Sandro Colli Planura", email = "colliplanura@gmail.com" }
+    { name = "Sandro Colli", email = "colliplanura@gmail.com" }
 ]
 keywords = [
     "nifti",
