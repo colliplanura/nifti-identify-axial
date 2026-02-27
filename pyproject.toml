@@ -10,7 +10,10 @@ readme = "README.md"
 license = "MIT"
 requires-python = ">=3.8"
 authors = [
-    { name = "NIfTI Identify Axial Project" }
+    { name = "Sandro Colli Planura", email = "colliplanura@gmail.com" }
+]
+maintainers = [
+    { name = "Sandro Colli Planura", email = "colliplanura@gmail.com" }
 ]
 keywords = [
     "nifti",
@@ -51,6 +54,7 @@ dev = [
 Homepage = "https://github.com/colliplanura/nifti-identify-axial"
 Repository = "https://github.com/colliplanura/nifti-identify-axial"
 Issues = "https://github.com/colliplanura/nifti-identify-axial/issues"
+Changelog = "https://github.com/colliplanura/nifti-identify-axial/blob/main/CHANGELOG.md"
 
 [project.scripts]
 nifti-filter = "nifti_filter.cli:main"
@@ -67,6 +71,7 @@ include = [
     "tests/",
     "README.md",
     "LICENSE",
+    "CHANGELOG.md",
 ]
 
 [tool.pytest.ini_options]

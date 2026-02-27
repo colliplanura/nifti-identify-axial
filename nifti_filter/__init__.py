@@ -3,10 +3,15 @@ NIfTI Filter - Filtro de Séries NIfTI Axiais de Partes Moles
 
 CLI para filtrar séries NIfTI axiais de partes moles com cortes finos,
 movendo séries não relevantes para diretório de descarte.
+
+Desenvolvido no âmbito do Doutorado em Ciências Médicas pelo
+Instituto D'Or de Pesquisa e Ensino (IDOR).
 """
 
 __version__ = "0.1.0"
-__author__ = "NIfTI Identify Axial Project"
+__author__ = "Sandro Colli Planura"
+__email__ = "colliplanura@gmail.com"
+__institution__ = "Instituto D'Or de Pesquisa e Ensino (IDOR)"
 
 from .classifier import AvaliacaoSerie, classificar_serie, is_axial_por_orientacao
 from .file_ops import carregar_json, descobrir_series, mover_para_descarte
